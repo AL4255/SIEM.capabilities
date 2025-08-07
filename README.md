@@ -1,4 +1,7 @@
 Splunk Demo Setup
+
+
+
 A simple demonstration of Splunk's log analysis capabilities using Docker Compose to run both Splunk and a log generator.
 Overview
 This demo showcases basic Splunk functionality by:
