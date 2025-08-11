@@ -1,0 +1,22 @@
+# this is a docker file to run my splunk container and log generator!! 
+
+
+services: 3.8
+  splunk:
+    image: splunk/splunk:8.2
+    container_name: splunk-demo
+    platform: linux/amd64
+    ports:
+      - "8000:8000"
+      - "9997:9997"
+    environment:
+      - SPLUNK_START_ARGS=--accept-license
+      - SPLUNK_PASSWORD=demo123456
+      - SPLUNK_USER=splunk
+      - OPTIMISTIC_ABOUT_FILE_LOCKING=1
+    volumes:
+      - ./logs:/opt/splunk/var/log/splunk/shared-logs
+    restart: unless-stopped
+    mem_limit: 2g
+    cpus: 1.0
+
