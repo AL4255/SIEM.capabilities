@@ -3,10 +3,12 @@
 
 # libs and config setting.....
 
-import time
-import re 
-import json
-import requests 
-import os 
-from datetime import datetime, timedata
-from collections import defaultdict
+import pandas as pd 
+import re
+import datetime
+import pathlib
+
+
+
+
+file_object = open('sample_logs.txt', 'r')
