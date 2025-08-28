@@ -10,7 +10,7 @@ import pathlib
 
 
 
-
+ # working on geeting the log info to another file and extracting>>>
 file_object = open('sample_logs.txt', 'r')
 
 new_da = file_object.readlines()
