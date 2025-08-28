@@ -12,3 +12,9 @@ import pathlib
 
 
 file_object = open('sample_logs.txt', 'r')
+
+new_da = file_object.readlines()
+
+print(len(new_da))
+
+print("First log entry:", new_da[0])
