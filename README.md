@@ -69,3 +69,10 @@ Alert configuration basics
 Cleanup
 bashdocker-compose down -v
 Perfect for showing off Splunk's core log management and analysis features with realistic data flow between containers.
+
+
+
+
+
+
+Section 2: I will be starting a part about checking for certian alerts that are in splunk or any siem env, it will in the alert data and do more in to depth checking. 
